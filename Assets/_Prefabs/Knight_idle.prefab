@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc2340bf42d44b3cadad37f19a06787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitboxPrefab: {fileID: 0}
+  hitboxPrefab: {fileID: 2711758348714041411, guid: 2894506c32e4a784185183acd6ade39b, type: 3}
   attackCooldown: 0.5
   hitboxLifetime: 0.2
   attackDistance: 0.7

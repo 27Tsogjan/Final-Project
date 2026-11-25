@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 730734029390379675}
   - component: {fileID: -1469842308232809266}
   - component: {fileID: 5723308584403705966}
+  - component: {fileID: 2364598133627620731}
   m_Layer: 0
   m_Name: goblin_idle_anim_f0
   m_TagString: Untagged
@@ -135,5 +136,29 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.75, y: 0.7, z: 0.2}
+  m_Center: {x: 0.05, y: -0.2, z: 0}
+--- !u!114 &2364598133627620731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5691033394162834312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d06ecd941e549d2911205a6136b8c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  speed: 0
+  g: 0
+  healthBar: {fileID: 0}
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  player: {fileID: 0}
+  meleeDamage: 2
+  meleeRange: 0.8
+  meleeCooldown: 1.5
+  audioSource: {fileID: 0}
+  meleeSound: {fileID: 0}
