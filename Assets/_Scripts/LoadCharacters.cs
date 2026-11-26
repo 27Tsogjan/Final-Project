@@ -23,8 +23,11 @@ public class LoadCharacters : MonoBehaviour
 
         GameObject prefab = characterPrefabs[selectedCharacter];
         GameObject clone = Instantiate(prefab, spawnPoint.position, Quaternion.identity);
-        label.text = prefab.name;
-
+        
+        if (label != null) {
+            label.text = prefab.name;
+        }
+        
         FollowCam cam = FindObjectOfType<FollowCam>();
         if (cam != null) {
             cam.player = clone;

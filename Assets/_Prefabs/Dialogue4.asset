@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0063217e025e4651addfae7908b9c1a, type: 3}
+  m_Name: Dialogue4
+  m_EditorClassIdentifier: 
+  title: Combat Guide
+  lines: "\"The castle guards are right ahead! Before you charge in, make sure your
+    skills are sharp.\"\n\"Use the arrow keys to move across the courtyard and position
+    yourself.\"\n\"Press Space to strike at the demon's minions before they overwhelm
+    you.\"\n\"Watch their movements and press Q to raise your guard and block incoming
+    blows or R to dogde their blows\"\n\"Defeat every last guard blocking the entrance\u2014once
+    the courtyard is clear, the castle doors will be yours to breach!\""
+  requiredProgress: 0
