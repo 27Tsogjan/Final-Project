@@ -11,6 +11,11 @@ GameObject:
   - component: {fileID: 357477539436705249}
   - component: {fileID: 357477539436705182}
   - component: {fileID: 357477539436705183}
+  - component: {fileID: 2704822799146822608}
+  - component: {fileID: 192084671964297695}
+  - component: {fileID: -6227060795762110365}
+  - component: {fileID: -3214397827711173408}
+  - component: {fileID: 8447970637920935315}
   m_Layer: 0
   m_Name: elf_f_run_anim_f0
   m_TagString: Untagged
@@ -106,3 +111,77 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2704822799146822608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357477539436705180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d005eb23118a048a98d42669dba88089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evadeKey: 113
+  evadeSpeed: 8
+  evadeDuration: 0.25
+  evadeCooldown: 1
+--- !u!114 &192084671964297695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357477539436705180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 966241cac74214dadaff4cc44ef20cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blockKey: 114
+  damageReduction: 0.5
+--- !u!114 &-6227060795762110365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357477539436705180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9a4558c03dde4a3eab116a6c4a7e6c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+--- !u!114 &-3214397827711173408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357477539436705180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 757b68503674948fca7a4620be7e310d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  damageCooldown: 0.5
+  healthBar: {fileID: 0}
+  maxHealth: 10
+--- !u!114 &8447970637920935315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357477539436705180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6be2bbb93a7fa4503ba5849e9d48316c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 8782779609139380901, guid: 0726374db08cf0e41a0dba68eb95b3f3, type: 3}
+  firePoint: {fileID: 3082262246466657701, guid: 91ac768bac9817b41b81ffdc9deb19c1, type: 3}
+  attackCooldown: 0.5
