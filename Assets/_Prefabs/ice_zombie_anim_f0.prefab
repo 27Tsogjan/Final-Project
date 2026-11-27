@@ -160,9 +160,9 @@ MonoBehaviour:
   player: {fileID: 0}
   rangedCooldown: 2
   rangedRange: 5
-  projectilePrefab: {fileID: 0}
-  firePoint: {fileID: 0}
-  rangedDamage: 1
+  projectilePrefab: {fileID: 4918495303741604309, guid: 93b734ec2123e5a4ea23d7e6c4391825, type: 3}
+  firePoint: {fileID: 7766392796383444776}
+  rangedDamage: 5
   projectileSpeed: 8
   audioSource: {fileID: 0}
   rangedSound: {fileID: 0}
