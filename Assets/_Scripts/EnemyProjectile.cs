@@ -39,7 +39,7 @@ public class EnemyProjectile : MonoBehaviour
 
         IDamageable target = other.GetComponentInParent<IDamageable>();
 
-        if (target != null) {
+        if (target == null) {
             return;
         }
         target.Damage(damage);

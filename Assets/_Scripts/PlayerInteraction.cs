@@ -15,17 +15,21 @@ public class PlayerInteraction : MonoBehaviour
         RemoveInvalidInteractables();
 
         if (Input.GetKeyDown(KeyCode.E))
-        {
+{
+            Debug.Log("E pressed. Nearby interactables: " + nearbyInteractables.Count);
             Interactable closest = GetClosestInteractable();
 
-            if (closest != null)
+            if (closest != null) {
+                Debug.Log("Closest interactable: " + closest.name);
                 closest.Interact();
+            }
         }
 
         UpdatePrompt();
     }
 
     private void OnTriggerEnter(Collider other) {
+        Debug.Log("Hero touched trigger: " + other.name);
         Interactable interactable = other.GetComponentInParent<Interactable>();
 
         if (interactable == null) {
