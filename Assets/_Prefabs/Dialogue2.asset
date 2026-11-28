@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Dialogue2
   m_EditorClassIdentifier: 
   title: Old Scout
-  lines: "\"You made it past the outer woods... good. The air grows heavier the closer
-    we get to the capital.\"\n\"That demon didn't just slay our King\u2014it warped
-    the castle into a fortress of shadow and corrupted the royal guard.\"\n\"The
-    King spoke of you before the end, saying only someone who knew his heart could
-    ever stand against such evil.\"\n\"Keep moving east. The castle gates lie just
-    beyond the next ridge, and its corrupted sentries are already waiting.\""
+  lines: "You made it past the outer woods... good. The air grows heavier the closer
+    we get to the capital. That demon didn't just slay our King\u2014it warped the
+    castle into a fortress of shadow and corrupted the royal guard. The King spoke
+    of you before the end, saying only someone who knew his heart could ever stand
+    against such evil. Keep moving east. The castle gates lie just beyond the next
+    ridge, and its corrupted sentries are already waiting."
   requiredProgress: 0

@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Old Scout
   lines: "Halt, traveler! Turn back while you still draw breath\u2014darkness has
-    fallen over the kingdom.\nWait... I know that face. You rode beside the King
-    in the old wars, didn't you? His long-lost friend, returned at last.\nI grieve
-    to tell you this, old friend: a ruthless demon breached the throne room last
-    night and struck the King down.\nThe crown lies shattered in the dust. Press
-    onward down this forest road if you truly mean to avenge him."
+    fallen over the kingdom. Wait... I know that face. You rode beside the King in
+    the old wars, didn't you? His long-lost friend, returned at last. I grieve to
+    tell you this, old friend: a ruthless demon breached the throne room last night
+    and struck the King down. The crown lies shattered in the dust. Press onward
+    down this forest road if you truly mean to avenge him."
   requiredProgress: 0

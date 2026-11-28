@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Dialogue4
   m_EditorClassIdentifier: 
   title: Combat Guide
-  lines: "\"The castle guards are right ahead! Before you charge in, make sure your
-    skills are sharp.\"\n\"Use the arrow keys to move across the courtyard and position
-    yourself.\"\n\"Press Space to strike at the demon's minions before they overwhelm
-    you.\"\n\"Watch their movements and press Q to raise your guard and block incoming
-    blows or R to dogde their blows\"\n\"Defeat every last guard blocking the entrance\u2014once
-    the courtyard is clear, the castle doors will be yours to breach!\""
+  lines: "The castle guards are right ahead! Before you charge in, make sure your
+    skills are sharp. Use the Arrow Keys or WASD to move across the courtyard and
+    position yourself. Press Space to strike at the demon's minions before they overwhelm
+    you. Watch their movements and press R to raise your guard and block incoming
+    blows or Q to dogde their blows. Defeat every last guard blocking the entrance\u2014once
+    the courtyard is clear, the castle doors will be yours to breach!"
   requiredProgress: 0

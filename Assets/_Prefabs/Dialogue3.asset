@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Dialogue3
   m_EditorClassIdentifier: 
   title: Old Scout
-  lines: "\"Look ahead\u2014the castle spires! Smoke rises from the courtyard where
-    the demon now sits upon your friend's throne.\"\n\"The demon's vanguard is guarding
-    the main doors just past this clearing. They won't let anyone step inside alive.\"\n\"Steel
-    your nerves and draw your weapon. You will have to cut through those guards before
-    you can breach the castle doors.\"\n\"Step forward into the courtyard\u2014and
-    make that monster pay for what it did to the King!\""
+  lines: "Look ahead\u2014the castle spires! Smoke rises from the courtyard where
+    the demon now sits upon your friend's throne. The demon's vanguard is guarding
+    the main doors just past this clearing. They won't let anyone step inside alive.
+    Steel your nerves and draw your weapon. You will have to cut through those guards
+    before you can breach the castle doors. Step forward into the courtyard\u2014and
+    make that monster pay for what it did to the King!"
   requiredProgress: 0
