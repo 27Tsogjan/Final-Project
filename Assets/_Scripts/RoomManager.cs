@@ -39,20 +39,23 @@ public class RoomManager : MonoBehaviour
 
         // Wait a frame so LoadCharacters has spawned the hero
         yield return null;
-        LoadRoom(startRoom);
+        LoadRoom(startRoom, DoorSide.Bottom);
     }
 
-    public void NextRoom() {
+    // exitedThrough = the side of the room the hero just left by
+    public void NextRoom(DoorSide exitedThrough) {
+        DoorSide entrySide = Room.Opposite(exitedThrough);
+
         if (!midbossReached) {
             if (roomsVisited >= roomsNeeded) {
                 midbossReached = true;
                 roomsVisited = 0;
-                LoadRoom(midbossRoom);
+                LoadRoom(midbossRoom, entrySide);
                 return;
             }
         }
         else if (roomsVisited >= roomsNeededAfter) {
-            LoadRoom(gateRoom);
+            LoadRoom(gateRoom, entrySide);
             return;
         }
 
@@ -68,14 +71,14 @@ public class RoomManager : MonoBehaviour
         }
 
         lastIndex = index;
-        LoadRoom(genericRooms[index]);
+        LoadRoom(genericRooms[index], entrySide);
     }
 
     public void LoadFinalBossRoom() {
-        LoadRoom(finalBossRoom);
+        LoadRoom(finalBossRoom, DoorSide.Left);
     }
 
-    private void LoadRoom(GameObject prefab) {
+    private void LoadRoom(GameObject prefab, DoorSide entrySide) {
         if (prefab == null) {
             Debug.LogError("RoomManager: a room prefab slot is empty.");
             return;
@@ -90,11 +93,18 @@ public class RoomManager : MonoBehaviour
         Room room = currentRoom.GetComponent<Room>();
         GameObject hero = GameObject.FindWithTag("Player");
 
-        if (hero == null || room == null || room.entryPoint == null) {
+        if (hero == null || room == null) {
             return;
         }
 
-        Vector3 pos = room.entryPoint.position;
+        Transform entry = room.GetEntry(entrySide);
+
+        if (entry == null) {
+            Debug.LogWarning("Room has no entry point for " + entrySide);
+            return;
+        }
+
+        Vector3 pos = entry.position;
         pos.z = hero.transform.position.z;
         hero.transform.position = pos;
 
